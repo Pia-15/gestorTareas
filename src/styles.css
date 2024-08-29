@@ -1,7 +1,9 @@
-/*Estilos generales*/
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Bad+Script&family=Dancing+Script:wght@400..700&family=Fredericka+the+Great&family=Great+Vibes&family=Italianno&family=Love+Ya+Like+A+Sister&family=Mrs+Saint+Delafield&family=Playwrite+IN:wght@252&family=Playwrite+NL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Bad+Script&family=Dancing+Script:wght@400..700&family=Fredericka+the+Great&family=Great+Vibes&family=Italianno&family=Love+Ya+Like+A+Sister&family=Mrs+Saint+Delafield&family=Playwrite+IN:wght@252&family=Playwrite+NL:wght@100..400&family=Pompiere&family=Sue+Ellen+Francisco&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Bad+Script&family=Dancing+Script:wght@400..700&family=Fredericka+the+Great&family=Great+Vibes&family=Italianno&family=La+Belle+Aurore&family=Love+Ya+Like+A+Sister&family=Mrs+Saint+Delafield&family=Playwrite+IN:wght@252&family=Playwrite+NL:wght@100..400&family=Pompiere&family=Sue+Ellen+Francisco&display=swap');
+/* Estilos generales*/
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #4e3643;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -9,13 +11,26 @@ body {
     justify-content: center;
     align-items: center;
 }
+h1{
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  color: #5f4955;
+  display: flex;
+  justify-content: center;
+}
 
 /* Estilos para el contenedor principal*/
 #app {
-    background-color: white;
-    padding: 20px;
+    font-family: "Sue Ellen Francisco", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px ;  
+    background-image: url("../fondo.jpg");
+    padding: 100px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(87, 48, 74, 0.1);
  }
 
  /* Estilos para el formulario*/
@@ -26,34 +41,51 @@ body {
 
  /* Estilos para el input*/
  input{
+    font-family: "Sue Ellen Francisco", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px ;  
     width: 75%;
+    color: #795c6d;
     padding: 8px;
-    margin-right: 10px;
-    border: 10px solid #ddd;
+    margin-right: 9px;
+    border: 10px solid #856476;
     border-radius: 3px;
  }
 
 /* Estilos al botón*/
 button { 
-    padding: 5px 8px;
-    background-color: #007bff;
-    color: white;
+font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+font-size: 20px;
+    background-color: #4e3643;
+    color: #bd8aacb7;
     border: none;
-    border-radius: 3px;
-    cursor:pointer;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
 /* Estilos de la lista*/
 ul
-{ list-style: none;
+{ 
+    list-style: none;
 padding: 0;
+border-color: #795267;
+opacity: 90%;
 }
+
 
 /*Estilos a los elementos de la lista*/
 li{
-    background-color: #f4f4f4;
+    font-family: "Sue Ellen Francisco", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px ;  
+    background-color: #994a7f;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #532a42;
+    opacity: 89%;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -62,6 +94,6 @@ li{
 
 /* Estilos para cuando una tarea este completada*/
 li.completed {
-    text-decoration: line-through;
-    color: #888;
+    text-decoration:line-through;
+    color: #462c3a;
 }
